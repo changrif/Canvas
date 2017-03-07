@@ -1,26 +1,148 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Canvas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" id="nti-WM-iCo">
+                                <rect key="frame" x="0.0" y="417" width="375" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="EhP-ZB-YhV">
+                                        <rect key="frame" x="34" y="57" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="5kY-Yb-hFD" appends="YES" id="XLY-b8-ZuY"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="sN5-zr-3sL">
+                                        <rect key="frame" x="34" y="153" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="HBj-n7-EkW" appends="YES" id="YGV-9E-EJ2"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="XRp-vE-RN1">
+                                        <rect key="frame" x="157" y="57" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="X0K-XF-8XL" appends="YES" id="wO6-RN-ByY"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="MjQ-ac-EyJ">
+                                        <rect key="frame" x="157" y="153" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="7gy-Gp-lrO" appends="YES" id="wcW-7w-xXc"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="jbd-1Z-RJU">
+                                        <rect key="frame" x="274" y="153" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="jgp-0W-5Gs" appends="YES" id="Z77-Uj-GFK"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="5Ln-qm-3xX">
+                                        <rect key="frame" x="173" y="16" width="30" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="1nU-9H-cDk">
+                                        <rect key="frame" x="274" y="57" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="qhU-vl-O89" appends="YES" id="feW-Mn-hEF"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.89185961790000001" green="0.89185961790000001" blue="0.89185961790000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="yRY-DO-QWb" appends="YES" id="m3a-re-xDf"/>
+                                    <outletCollection property="gestureRecognizers" destination="CgX-Yt-tWB" appends="YES" id="4UN-3q-h9j"/>
+                                </connections>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="arrowImageView" destination="5Ln-qm-3xX" id="HTw-pJ-c87"/>
+                        <outlet property="astonishedEmojiView" destination="jbd-1Z-RJU" id="Pc6-0n-5Vb"/>
+                        <outlet property="happyEmojiView" destination="EhP-ZB-YhV" id="JVI-PI-R4n"/>
+                        <outlet property="openMouthEmojiView" destination="XRp-vE-RN1" id="I4d-HB-On1"/>
+                        <outlet property="openWinkyEmojiView" destination="1nU-9H-cDk" id="UrJ-Ig-Y3I"/>
+                        <outlet property="sadEmojiView" destination="MjQ-ac-EyJ" id="X8A-u0-TYL"/>
+                        <outlet property="trayView" destination="nti-WM-iCo" id="HVo-6b-Yji"/>
+                        <outlet property="winkyEmojiView" destination="sN5-zr-3sL" id="Jf8-xj-WAY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="yRY-DO-QWb" userLabel="TrayView Pan Gesture Recognizer">
+                    <connections>
+                        <action selector="onTrayPanGesture:" destination="BYZ-38-t0r" id="5Jv-qt-Zew"/>
+                    </connections>
+                </panGestureRecognizer>
+                <tapGestureRecognizer id="CgX-Yt-tWB" userLabel="TrayView Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="onTrayTapGesture:" destination="BYZ-38-t0r" id="9yq-LE-S6s"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="5kY-Yb-hFD">
+                    <connections>
+                        <action selector="onEmojiViewPanGesture:" destination="BYZ-38-t0r" id="4nd-8i-yHG"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="X0K-XF-8XL">
+                    <connections>
+                        <action selector="onEmojiViewPanGesture:" destination="BYZ-38-t0r" id="bqF-Dh-eIq"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="qhU-vl-O89">
+                    <connections>
+                        <action selector="onEmojiViewPanGesture:" destination="BYZ-38-t0r" id="5cU-T9-c8I"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="HBj-n7-EkW">
+                    <connections>
+                        <action selector="onEmojiViewPanGesture:" destination="BYZ-38-t0r" id="bAR-Lw-3fa"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="7gy-Gp-lrO">
+                    <connections>
+                        <action selector="onEmojiViewPanGesture:" destination="BYZ-38-t0r" id="qw4-Bi-HRi"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="jgp-0W-5Gs">
+                    <connections>
+                        <action selector="onEmojiViewPanGesture:" destination="BYZ-38-t0r" id="mI2-E1-lzK"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="73.5" y="136.5"/>
         </scene>
     </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
 </document>
